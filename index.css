@@ -52,3 +52,6 @@ body {
 	box-sizing: border-box;
 }
 /*--- ページ基本デザイン ---*/
+p {
+	font-size: 20px;
+}
