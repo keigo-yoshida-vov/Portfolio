@@ -52,6 +52,6 @@ body {
 	box-sizing: border-box;
 }
 /*--- ページ基本デザイン ---*/
-p {
-	font-size: 100px;
+#make {
+	color:#c30;
 }
