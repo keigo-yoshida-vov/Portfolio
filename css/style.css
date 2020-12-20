@@ -65,6 +65,7 @@ header {
 	max-width: 300px;
 }
 #title {
+	display: flex;
 	font-size: 1.5em;
 	padding: 10% 0 0 10%;
 }
