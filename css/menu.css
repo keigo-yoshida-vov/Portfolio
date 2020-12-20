@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*--- ページ基本デザイン ---*/
+.btn-trigger {
+	position: relative;
+	width: 50px;
+	height: 44px;
+	cursor: pointer;
+  }
+  .btn-trigger span {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: skyblue;
+	border-radius: 4px;
+  }
+  .btn-trigger, .btn-trigger span {
+	display: inline-block;
+	transition: all .5s;
+	box-sizing: border-box;
+  }
+  .btn-trigger span:nth-of-type(1) {
+	top: 0;
+  }
+  .btn-trigger span:nth-of-type(2) {
+	top: 20px;
+  }
+  .btn-trigger span:nth-of-type(3) {
+	bottom: 0;
+  }
+#btn19::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	content: '';
+	width: 84px;
+	height: 84px;
+	margin: -45px 0 0 -45px;
+	border-radius: 50%;
+	border: 4px solid transparent;
+	transition: all .75s;
+  }
+  #btn19.active span:nth-of-type(1) {
+	-webkit-transform: translateY(20px) rotate(-45deg);
+	transform: translateY(20px) rotate(-45deg);
+  }
+  #btn19.active span:nth-of-type(2) {
+	left: 60%;
+	opacity: 0;
+	-webkit-animation: active-btn19-bar02 .8s forwards;
+	animation: active-btn19-bar02 .8s forwards;
+  }
+  @-webkit-keyframes active-btn19-bar02 {
+	100% {
+	  height: 0;
+	}
+  }
+  @keyframes active-btn19-bar02 {
+	100% {
+	  height: 0;
+	}
+  }
+  #btn19.active span:nth-of-type(3) {
+	-webkit-transform: translateY(-20px) rotate(45deg);
+	transform: translateY(-20px) rotate(45deg);
+  }
+  #btn19.active::after {
+	-webkit-animation: active-btn19 .7s .25s forwards;
+	animation: active-btn19 .7s .25s forwards;
+  }
+  @-webkit-keyframes active-btn19 {
+	0% {
+	  border-color: transparent;
+	  -webkit-transform: rotate(0);
+	}
+	25% {
+	  border-color: transparent skyblue transparent transparent;
+	}
+	50% {
+	  border-color: transparent skyblue skyblue transparent;
+	}
+	75% {
+	  border-color: transparent skyblue skyblue skyblue;
+	}
+	100% {
+	  border-color: skyblue;
+	  -webkit-transform: rotate(-680deg);
+	}
+  }
+  @keyframes active-btn19 {
+	0% {
+	  border-color: transparent;
+	  transform: rotate(0);
+	}
+	25% {
+	  border-color: transparent skyblue transparent transparent;
+	}
+	50% {
+	  border-color: transparent skyblue skyblue transparent;
+	}
+	75% {
+	  border-color: transparent skyblue skyblue skyblue;
+	}
+	100% {
+	  border-color: skyblue;
+	  transform: rotate(-680deg);
+	}
+  }
+  
+  
+  /*=============================
+  body
+  =============================*/
+  body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background: whitesmoke;
+	word-break: break-all;
+  }
+  .content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+  section {
+	position: relative;
+	width: 150px;
+	padding: 20% 5% 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	counter-increment: section;
+  }
+  p._a {
+	font-size: 13px;
+	margin: 30px;
+  }
+  p._a .link {
+	display: inline-block;
+	color: skyblue;
+	text-decoration: none;
+	padding-left: 1.3em;
+	text-indent: -1.3em;
+  }
+  p._a .link:before {
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-top: 2px solid skyblue;
+	border-right: 2px solid skyblue;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-right: 10px;
+  }

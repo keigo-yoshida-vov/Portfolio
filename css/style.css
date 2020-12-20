@@ -52,9 +52,22 @@ body {
 	box-sizing: border-box;
 }
 /*--- ページ基本デザイン ---*/
-img {
-	width: 50px;	
+body {
+	background-color: whitesmoke;
 }
-#make {
-	color:#c30;
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+#header_logo {
+	width: 100%;
+	max-width: 300px;
+}
+#title {
+	font-size: 1.5em;
+	padding: 10% 0 0 10%;
+}
+#navbar {
+	font-size: 1em;
 }
