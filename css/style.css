@@ -52,6 +52,9 @@ body {
 	box-sizing: border-box;
 }
 /*--- ページ基本デザイン ---*/
+img {
+	background-color: aqua;
+}
 #make {
 	color:#c30;
 }
