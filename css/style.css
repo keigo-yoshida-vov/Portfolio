@@ -54,6 +54,7 @@ body {
 /*--- ページ基本デザイン ---*/
 img {
 	background-color: aqua;
+	width: 50px;	
 }
 #make {
 	color:#c30;
