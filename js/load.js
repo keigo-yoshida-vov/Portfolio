@@ -16,9 +16,10 @@ $('head').append(
     '<style>#load_a{display:none;}',
     '<style>#load_b{display:none;}',
     '<style>#load_c{display:none;}',
+    '<style>.cat{display:none;}',
 );
 $(window).on("load", function() {
-    $('body').delay(150).fadeIn("slow");
+    $('body').delay(200).fadeIn("slow");
     $('#load1').delay(200).fadeIn("slow");
     $('#load2').delay(250).fadeIn("slow");
     $('#load3').delay(300).fadeIn("slow");
@@ -32,10 +33,8 @@ $(window).on("load", function() {
     $('#load11').delay(900).fadeIn("slow");
     $('#load12').delay(950).fadeIn("slow");
     $('#load13').delay(1000).fadeIn("slow");
+    $(".cat").delay(1000).fadeIn("slow");
     $('#load_a').delay(1500).fadeIn("slow");
     $('#load_b').delay(2000).fadeIn("slow");
     $('#load_c').delay(2500).fadeIn("slow");
-});
-$('.profile').on('click', function(){
-    $('.profile').toggleClass('is-active');
 });
