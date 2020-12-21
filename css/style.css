@@ -72,6 +72,7 @@ header {
 }
 #header_flex {
 	display: flex;
+	height: 100px;
 	justify-content: space-between;
 	position: relative;
 }
@@ -108,26 +109,44 @@ nav ul {
 	display: flex;
 	justify-content: flex-start;
 	min-width: 600px;
-	margin: 25px 0 0 0;
+	height: 100%;
 }
 nav ul li {
 	margin-right: 80px;
 	width: 120px;
 }
-nav ul li a {
+#link {
 	display: flex;
 }
-nav ul li a p {
+#link {
+	display: flex;
+	margin-top: 20px;
+}
+nav ul li a {
+	position: relative;
+}
+#link p {
 	display: flex;
 	align-items: center;
 	font-size: 25px;
 	text-shadow: 0.5px 0.5px;
 	font-weight: bold;
 }
-nav ul li img {
+#link img {
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 1px 1px ;
 	width: 30px;
 	margin: 10px;
+}
+.hand {
+	opacity: 0;
+	height: 90px;
+	margin-left: 20px;
+	position:absolute;
+}
+.hand img {
+	margin-top: 1px;
+	width: 90px;
+	opacity: 0.2;
 }
