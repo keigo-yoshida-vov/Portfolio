@@ -98,7 +98,6 @@ nav ul {
 nav ul li {
 	margin-right: 100px;
 	width: 120px;
-	box-shadow: 1px 1px;
 }
 nav ul li a {
 	display: flex;
