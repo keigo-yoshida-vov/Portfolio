@@ -59,3 +59,15 @@ $(function() {
         }, 0, 'none');
     });
 });
+$(function(){
+    $("a[href^='#']").on("click",function(){
+      var speed = 500;
+      var header_height = $("header").height();
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == ""?"html":href);
+      var position = target.offset().top - header_height;
+      $("html, body").animate({
+        "scroll-top": position }, speed, "swing");
+      return false;
+    });
+  });
