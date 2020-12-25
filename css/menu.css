@@ -88,21 +88,21 @@ nav ul li {
 	margin-right: 80px;
 	width: 120px;
 }
-#link {
+.link {
 	display: flex;
 	margin-top: 25px;
 }
 nav ul li a {
 	position: relative;
 }
-#link p {
+.link p {
 	display: flex;
 	align-items: center;
 	font-size: 25px;
 	text-shadow: 0.5px 0.5px;
 	font-weight: bold;
 }
-#link img {
+.link img {
 	background-color: white;
 	border-radius: 5px;
 	width: 30px;

@@ -41,19 +41,19 @@
     justify-content: center;
     padding: 5% 0 3% 0;
 }
+
+/* button_design */
 *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
 .btn,
 a.btn,
 button.btn {
@@ -62,7 +62,7 @@ button.btn {
   line-height: 1.5;
   position: relative;
   display: inline-block;
-  /* padding: 1rem 4rem; */
+  padding: 1rem 4rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -77,43 +77,33 @@ button.btn {
   color: #212529;
   border-radius: 0.5rem;
 }
-
 a.btn-malformation {
   font-size: 2rem;
-
-  /* padding: 3rem 4rem; */
-
-  color: #fff;
-  border-radius: 100% 80px / 80px 100%;
-  background-color: #eb6100;
-}
-
-a.btn-malformation:hover {
-  color: #fff;
-  border-radius: 60% 80% / 100% 80%;
-}
-
-a.btn-malformation {
-  font-size: 2rem;
-
   padding: 3rem 4rem;
-
   color: #fff;
   border-radius: 100% 80px / 80px 100%;
+  background-color: cornsilk;
 }
-
 a.btn-malformation:hover {
   color: #fff;
   border-radius: 60% 80% / 100% 80%;
 }
-
+a.btn-malformation {
+  font-size: 2rem;
+  padding: 3rem 4rem;
+  color: #fff;
+  border-radius: 100% 80px / 80px 100%;
+}
+a.btn-malformation:hover {
+  color: #fff;
+  border-radius: 60% 80% / 100% 80%;
+}
 .btn-malformation--pastel {
-  background: #fca1a1;
-  background: -webkit-linear-gradient(-45deg, #fca1a1 40%, #fcfc5d 100%);
-  background: -webkit-linear-gradient(315deg, #fca1a1 40%, #fcfc5d 100%);
-  background: linear-gradient(135deg, #fca1a1 40%, #fcfc5d 100%);
-  -webkit-box-shadow: 30px 10px 0 #fefeb3;
-  box-shadow: 30px 10px 0 #fefeb3;
-
+  background: cadetblue;
+  background: -webkit-linear-gradient(-45deg, cadetblue 40%, cornsilk 100%);
+  background: -webkit-linear-gradient(315deg, cadetblue 40%, cornsilk 100%);
+  background: linear-gradient(135deg, cadetblue 40%, cornsilk 100%);
+  -webkit-box-shadow: 30px 10px 0 cornsilk;
+  box-shadow: 30px 10px 0 cornsilk;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fca1a1', endColorstr='#fcfc5d', GradientType=1);
 }
