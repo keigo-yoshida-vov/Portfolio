@@ -25,7 +25,7 @@ body {
 }
 header {
 	/* display: none; */
-	width: 100%;
+	width: 100vw;
 	height: 100px;
 	min-width: 1000px;
 	/* border-top: 2px double black;
@@ -33,11 +33,8 @@ header {
 	box-shadow:
     0 1.9px 2.5px rgba(0, 0, 0, 0.057),
     0 5px 6.1px rgba(0, 0, 0, 0.076),
-	0 10.1px 11.4px rgba(0, 0, 0, 0.086),
-	0 19.2px 19.8px rgba(0, 0, 0, 0.092),
-    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
-    0 101px 74px rgba(0, 0, 0, 0.13);
-	background-color: rgba(252,247,220,0.8);
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086);
+	background-color: rgba(252,247,220,1);
 	position: fixed;
 	z-index: 10000;
 }
