@@ -83,14 +83,30 @@ nav ul {
 }
 nav ul li {
 	margin-right: 80px;
-	width: 120px;
+	width: 140px;
 }
 .link {
 	display: flex;
 	margin-top: 25px;
+	position: relative;
 }
 nav ul li a {
 	position: relative;
+}
+.link::after {
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #333;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: transform .3s;
+  }
+.link:hover::after {
+	transform: scale(1, 1);
 }
 .link p {
 	display: flex;

@@ -10,3 +10,10 @@ main {
     0 5px 6.1px rgba(0, 0, 0, 0.076),
     0 10.1px 11.4px rgba(0, 0, 0, 0.086);
 }
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
