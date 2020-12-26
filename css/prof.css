@@ -11,6 +11,10 @@
     padding: 50px;
     align-items: center;
     background-color: white;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086);
 }
 #prof_title {
     width: 200px;

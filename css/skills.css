@@ -8,9 +8,13 @@
 #skills_main {
     width: 1200px;
     margin: 0 auto;
-    padding: 20px 50px;
+    padding: 20px 50px 10px 50px;
     align-items: center;
     background-color: white;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086);
 }
 #skills_title {
     width: 200px;
@@ -28,7 +32,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 #lang_title {
     font-size: 1.5rem;
@@ -41,11 +45,15 @@
     border-radius: 5px;
     width: 400px;
     margin-top: 10px;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086);
 }
 .box {
     display: flex;
     align-items: center;
-    padding: 15px 0 10px 20px;
+    padding: 10px 0 10px 25px;
 }
 .box:not(:last-child) {
     border-bottom: 2px dashed cadetblue;
@@ -83,6 +91,10 @@
     width: 500px;
     margin-top: 5px;
     padding: 20px;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086);
 }
 .m_box {
     padding: 10px;
@@ -92,7 +104,7 @@
     font-weight: bold;
 }
 .qua_box {
-    padding-top: 60px;
+    padding-top: 95px;
 }
 #qua_title {
     font-size: 1.5rem;
@@ -106,6 +118,10 @@
     width: 500px;
     margin-top: 5px;
     padding: 20px;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+    0 5px 6.1px rgba(0, 0, 0, 0.076),
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086);
 }
 #qua_table {
     width: 200px;
