@@ -1,14 +1,16 @@
 /*--- ページ基本デザイン ---*/
 #top_sec {
     background-image: url("../img/miti.jpg");
-    background-size: 100vw auto;
-    opacity: 0.8;
+    background-size: 100% 100%;
+    min-width: 1300px;
+    opacity: 0.9;
     height: 800px;
 }
 #top_contents {
     width: 1200px;
+    min-width: 900px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px 20px 0 20px;
     display: flex;
     justify-content: space-between;
 }

@@ -2,6 +2,7 @@
 #prof_sec {
     padding: 2%;
     width: 100%;
+    min-width: 1300px;
     height: 800px;
     background-color: cornsilk;
 }
@@ -29,6 +30,7 @@
 }
 #prof_contents {
     width: 1000px;
+    min-width: 800px;
     padding: 100px 50px;
     display: flex;
     justify-content: space-between;

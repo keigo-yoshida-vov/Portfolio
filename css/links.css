@@ -2,6 +2,7 @@
 #links_sec {
     padding: 2% 0;
     width: 100%;
+    min-width: 1300px;
     height: 750px;
     background-color: lightcyan;
 }
