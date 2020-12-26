@@ -101,3 +101,59 @@ $(function(){
       return false;
     });
 });
+$(function(){
+    $(window).scroll(function (){
+      $("#prof_main").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > imgPos - windowHeight + windowHeight/5){
+          $(this).addClass("fade_on");
+        } else {
+          $(this).removeClass("fade_on");
+        }
+      });
+    });
+});
+$(function(){
+    $(window).scroll(function (){
+      $("#skills_main").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > imgPos - windowHeight + windowHeight/5){
+          $(this).addClass("fade_on");
+        } else {
+          $(this).removeClass("fade_on");
+        }
+      });
+    });
+});
+$(function(){
+    $(window).scroll(function (){
+      $("#items_main").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > imgPos - windowHeight + windowHeight/5){
+          $(this).addClass("fade_on");
+        } else {
+          $(this).removeClass("fade_on");
+        }
+      });
+    });
+});
+$(function(){
+    $(window).scroll(function (){
+      $("#links_main").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > imgPos - windowHeight + windowHeight/5){
+          $(this).addClass("fade_on");
+        } else {
+          $(this).removeClass("fade_on");
+        }
+      });
+    });
+});
