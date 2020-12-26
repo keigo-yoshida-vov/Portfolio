@@ -13,9 +13,12 @@
     <!-- <link rel="stylesheet" href="https://keigo-yoshida-vov.github.io/Portfolio/css/top.css"> -->
     <link rel="stylesheet" href="css/prof.css">
     <!-- <link rel="stylesheet" href="https://keigo-yoshida-vov.github.io/Portfolio/css/prof.css"> -->
+    <link rel="stylesheet" href="css/skills.css">
+    <!-- <link rel="stylesheet" href="https://keigo-yoshida-vov.github.io/Portfolio/css/skills.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Flower&family=Langar&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 </head>
 <body>
     <header>
@@ -105,7 +108,7 @@
                             <img src="img/cat.png" alt="face">
                         </div>
                         <div id="prof_box">
-                            <table>
+                            <table class="prof_table">
                                 <tbody>
                                     <tr>
                                         <td>Name</td>
@@ -125,7 +128,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <table id="prof_table_pad">
+                            <table id="prof_table_pad" class="prof_table">
                                 <tbody>
                                     <tr>
                                         <th>Work history</th><th>Period</th>
@@ -159,13 +162,155 @@
                         <p>Skills</p>
                     </div>
                     <div id="skills_contents">
-
+                        <div class="skills_box">
+                            <div id="lang_title">
+                                <p>Lang</p>
+                            </div>
+                            <div id="langbox">
+                                <div class="box">
+                                    <div class="imgset">
+                                        <img src="img/html.png" alt="html">
+                                        <p>HTML</p>
+                                    </div>
+                                    <table class="lang_table">
+                                        <tbody>
+                                            <tr>
+                                                <td>　-　</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="box" id="bkcolor">
+                                    <div class="imgset">
+                                        <img src="img/css.png" alt="css">
+                                        <p>CSS</p>
+                                    </div>
+                                    <table class="lang_table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Bootstrap</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="box">
+                                    <div class="imgset">
+                                        <img src="img/js.png" alt="js">
+                                        <p>Javascript</p>
+                                    </div>
+                                    <table class="lang_table">
+                                        <tbody>
+                                            <tr>
+                                                <td>JQuery</td>
+                                                <td>Bootstrap</td>
+                                            </tr>
+                                            <tr><td></td><td>Datepicker</td></tr>
+                                            <tr><td></td><td>Slick</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="box" id="bkcolor">
+                                    <div class="imgset">
+                                        <img src="img/php.png" alt="php">
+                                        <p>PHP</p>
+                                    </div>
+                                    <table class="lang_table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Pure</td><td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Framework</td><td>Laravel</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td><td>Cakephp</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td><td>CodeIgniter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="box">
+                                    <div class="imgset">
+                                        <img src="img/sql.jpg" alt="sql">
+                                        <p>SQL</p>
+                                    </div>
+                                    <table class="lang_table">
+                                        <tbody>
+                                            <tr>
+                                                <td>MySQL</td><td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>PostgreSQL</td><td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="box" id="bkcolor">
+                                    <div class="imgset">
+                                        <img src="img/powershell.png" alt="powershell">
+                                        <p>Powershell</p>
+                                    </div>
+                                    <table class="lang_table">
+                                        <tbody>
+                                            <tr><td>ISE</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="boxtrain">
+                            <div class="tools_box">
+                                <div id="tools_title">
+                                    <p>Tools</p>
+                                </div>
+                                <div id="toolbox">
+                                    <div id="l_box">
+                                        <div class="m_box">
+                                            <p class="tools_catch">・Development Environment</p>
+                                            <p>　Vagrant&VirtialBox, MAMP, ZAMPP</p>
+                                        </div>
+                                        <div class="m_box">
+                                            <p class="tools_catch">・Management</p>
+                                            <p>　git, Readmine, Trello</p>
+                                        </div>
+                                        <div class="m_box">
+                                            <p class="tools_catch">・communication</p>
+                                            <p>　Slack, Tiams, Zoom, GoogleMeats, Skype, Discord</p>
+                                        </div>
+                                        <div class="m_box">
+                                            <p class="tools_catch">・Ather</p>
+                                            <p>　PHPMyAdmin, VScode, ATOM, Brackets, Teraterm,</p>
+                                            <p>　CSE, FFFTP, JP1, BOX, Office365</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qua_box">
+                                <div id="qua_title">
+                                    <p>Qualification</p>
+                                </div>
+                                <div id="quabox">
+                                    <table id="qua_table">
+                                        <tbody>
+                                            <tr>
+                                                <td>2015/07</td><td>ITP</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>             
             </div>
         </section>
         <section>
             <div id="items_sec">
+                
             </div>
         </section>
         <section>

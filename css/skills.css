@@ -1,0 +1,113 @@
+/*--- ページ基本デザイン ---*/
+#skills_sec {
+    padding: 2% 0;
+    width: 100%;
+    height: 800px;
+    background-color: lightcyan;
+}
+#skills_main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    align-items: center;
+    background-color: white;
+}
+#skills_title {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    border-bottom: 5px dotted black;
+}
+#skills_title p {
+    margin: 0 auto;
+}
+#skills_contents {
+    width: 1000px;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#lang_title {
+    font-size: 1.5rem;
+}
+#lang_title p {
+    font-weight: bold;
+}
+#langbox {
+    border: 2px outset cadetblue;
+    border-radius: 5px;
+    width: 400px;
+    margin-top: 10px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 10px 20px;
+}
+.box:not(:last-child) {
+    border-bottom: 2px dashed cadetblue;
+}
+.imgset {
+    padding: 2px;
+}
+.imgset img {
+    width: 40px;
+    mix-blend-mode: multiply;
+}
+.imgset p {
+    width: 40px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#bkcolor {
+    background-color: lightcyan;
+}
+.lang_table {
+    width: 200px;
+    table-layout: fixed;
+    margin: 0 auto;
+}
+#tools_title {
+    font-size: 1.5rem;
+}
+#tools_title p {
+    font-weight: bold;
+}
+#toolbox {
+    border: 2px outset cadetblue;
+    border-radius: 5px;
+    width: 500px;
+    margin-top: 5px;
+    padding: 20px;
+}
+.m_box {
+    padding: 10px;
+}
+.tools_catch {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.qua_box {
+    padding-top: 60px;
+}
+#qua_title {
+    font-size: 1.5rem;
+}
+#qua_title p {
+    font-weight: bold;
+}
+#quabox {
+    border: 2px outset cadetblue;
+    border-radius: 5px;
+    width: 500px;
+    margin-top: 5px;
+    padding: 20px;
+}
+#qua_table {
+    width: 200px;
+    table-layout: fixed;
+}

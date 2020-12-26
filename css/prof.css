@@ -1,6 +1,6 @@
 /*--- ページ基本デザイン ---*/
 #prof_sec {
-    padding: 5%;
+    padding: 2%;
     width: 100%;
     height: 800px;
     background-color: cornsilk;
@@ -35,7 +35,7 @@
 #prof_img img {
     margin: 0 auto;
 }
-table{
+.prof_table{
     width: 500px;
     table-layout: fixed;
     margin: 0 auto;
@@ -43,9 +43,9 @@ table{
 #prof_table_pad {
     margin-top: 50px;
 }
-table tr {
+.prof_table tr {
     border-bottom: 1px solid black;
 }
-table tr th {
+.prof_table tr th {
     font-size: 1.5rem;
 }
