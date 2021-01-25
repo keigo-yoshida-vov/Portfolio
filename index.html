@@ -14,26 +14,26 @@
     <link rel="stylesheet" href="css/items.css">
     <link rel="stylesheet" href="css/links.css">
     <link href="https://fonts.googleapis.com/css2?family=Flower&family=Langar&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/menu.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
     <header>
-        <div class="cat">
+        <div class="cat" id="cat">
             <img src="img/cat.png" alt="cat">
         </div>
         <div id="header_flex">
             <div id="header_main">
-                <a href="#top_sec" class="home">
-                    <ul id="title">
+                <a href="#top_sec" class="home" id="home">
+                    <div id="title">
                         <p>Keigo Yoshida</p>
-                    </ul>
+                    </div>
                 </a>
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="#prof_sec" class="profile">
+                        <a href="#prof_sec" class="profile" id="profile">
                             <div class="hand" id="hand_p">
                                 <img src="img/cat.png" alt="cat">
                             </div>
@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#skills_sec" class="skills">
+                        <a href="#skills_sec" class="skills" id="skills">
                             <div class="hand" id="hand_s">
                                 <img src="img/cat.png" alt="cat">
                             </div>
@@ -53,7 +53,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#items_sec" class="items">
+                        <a href="#items_sec" class="items" id="items">
                             <div class="hand" id="hand_i">
                                 <img src="img/cat.png" alt="cat">
                             </div>
@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#links_sec" class="links">
+                        <a href="#links_sec" class="links" id="links">
                             <div class="hand" id="hand_l">
                                 <img src="img/cat.png" alt="cat">
                             </div>
@@ -128,22 +128,22 @@
                             <table id="prof_table_pad" class="prof_table">
                                 <tbody>
                                     <tr>
-                                        <th>Work history</th><th>Period</th>
+                                        <th>Work history</th><th></th>
                                     </tr>
                                     <tr>
                                         <td>　Infrastructure operation</td><td>5 years</td>
                                     </tr>
                                     <tr>
-                                        <td>▼Job change</td><td>-</td>
+                                        <td>▽Job change</td><td>-</td>
                                     </tr>
                                     <tr>
                                         <td>　Infrastructure operation</td><td>9 months</td>
                                     </tr>
                                     <tr>
-                                        <td>▽Skill change</td><td>-</td>
+                                        <td>▼Skill change</td><td>-</td>
                                     </tr>
                                     <tr>
-                                        <td>　PHP engineer</td><td>1 years</td>
+                                        <td>　PHP engineer</td><td>2 month</td>
                                     </tr> 
                                 </tbody>
                             </table>
@@ -200,9 +200,10 @@
                                     <table class="lang_table">
                                         <tbody>
                                             <tr>
-                                                <td>JQuery</td>
-                                                <td>Bootstrap</td>
+                                                <td>Pure</td>
+                                                <td></td>
                                             </tr>
+                                            <tr><td>JQuery</td><td>Bootstrap</td></tr>
                                             <tr><td></td><td>Datepicker</td></tr>
                                             <tr><td></td><td>Slick</td></tr>
                                         </tbody>
@@ -223,9 +224,6 @@
                                             </tr>
                                             <tr>
                                                 <td></td><td>Cakephp</td>
-                                            </tr>
-                                            <tr>
-                                                <td></td><td>CodeIgniter</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -268,7 +266,7 @@
                                     <div id="l_box">
                                         <div class="m_box">
                                             <p class="tools_catch">・Development Environment</p>
-                                            <p>　Vagrant&VirtialBox, MAMP, ZAMPP</p>
+                                            <p>　Vagrant&VirtialBox, MAMP, ZAMPP, Docker</p>
                                         </div>
                                         <div class="m_box">
                                             <p class="tools_catch">・Management</p>
