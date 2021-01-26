@@ -1,47 +1,47 @@
 /*--- ページ基本デザイン ---*/
 #top_sec {
-    background-image: url("../img/miti.jpg");
-    background-size: 100% 100%;
-    min-width: 1300px;
-    opacity: 0.9;
-    height: 800px;
+  background-image: url("../img/miti.jpg");
+  background-size: 100% 100%;
+  min-width: 1300px;
+  opacity: 0.9;
+  height: 800px;
 }
 #top_contents {
-    width: 1200px;
-    min-width: 900px;
-    margin: 0 auto;
-    padding: 100px 20px 0 20px;
-    display: flex;
-    justify-content: space-between;
+  width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 100px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 #name_title {
-    width: 500px;
-    font-size: 4rem;
-    color: cadetblue;
-    -webkit-text-stroke: 1px #FFF;
+  width: 500px;
+  font-size: 4rem;
+  color: cadetblue;
+  -webkit-text-stroke: 1px #FFF;
 }
 #name_title p {
-    font-weight: bold;
-    text-shadow: cornsilk 2px 2px;
+  font-weight: bold;
+  text-shadow: cornsilk 2px 2px;
 }
 #name_subtitle {
-    width: 700px;
-    font-size: 2rem;
-    color: cadetblue;
-    padding: 20% 0 3% 0;
-    -webkit-text-stroke: 1px #FFF;
+  width: 700px;
+  font-size: 2rem;
+  color: cadetblue;
+  padding: 20% 0 3% 0;
+  -webkit-text-stroke: 1px #FFF;
 }
 #name_subtitle p {
-    text-align: end;
-    font-weight: bold;
-    text-shadow: cornsilk 2px 2px;
+  text-align: end;
+  font-weight: bold;
+  text-shadow: cornsilk 2px 2px;
 }
 #button {
-    width: 400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    padding: 5% 0 3% 0;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 3% 0;
 }
 
 /* button_design */
