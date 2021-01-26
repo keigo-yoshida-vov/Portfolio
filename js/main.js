@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function(){
             catHand(1);
             addFade("prof_main");
         } else if( 1800 > window.scrollY ) {
-            addFade("skills_main");
             catHand(2);
+            addFade("skills_main");
         } else if( 2600 > window.scrollY ) {
-            addFade("items_main");
             catHand(3);
+            addFade("items_main");
         } else if( 3200 > window.scrollY ) {
-            addFade("links_main");
             catHand(4);
+            addFade("links_main");
         }
     });
 });
