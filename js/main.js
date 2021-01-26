@@ -7,23 +7,21 @@ document.addEventListener("DOMContentLoaded", function(){
         'items',
         'links'
     ]; 
-    //猫の手
+    //猫の手アクティブ
+    const catList = [
+        '#cat {opacity : 1;}',
+        '#hand_p {opacity : 1;}',
+        '#hand_s {opacity : 1;}',
+        '#hand_i {opacity : 1;}',
+        '#hand_l {opacity : 1;}'
+    ]; 
+    //猫の手opacityリセット
     const resetHand = `
-        #cat {
-            opacity : 0;
-        }
-        #hand_p {
-            opacity : 0;
-        }
-        #hand_s {
-            opacity : 0;
-        }
-        #hand_i {
-            opacity : 0;
-        }
-        #hand_l {
-            opacity : 0;
-        }`;
+        #cat {opacity : 0;}
+        #hand_p {opacity : 0;}
+        #hand_s {opacity : 0;}
+        #hand_i {opacity : 0;}
+        #hand_l {opacity : 0;}`;
     
     //スムーズスクロール
     const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
@@ -43,101 +41,51 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
-    //homeクリックで猫の手
-    let clickElement0 = document.getElementById(menuList[0]);
-    clickElement0.addEventListener("click", (event) => {
-        let eventID = event.currentTarget.id;
-        if(eventID = clickElement0) {
-            let style = document.createElement('style');
-            style.innerHTML = resetHand + `
-            #cat {
-                opacity : 1;
-            }`
-            document.body.appendChild(style);
-        }
+    //メニュークリックで猫の手関数
+    function catHand(num){
+        let style = document.createElement('style');
+        style.innerHTML = resetHand + "\n" + catList[num]
+        document.body.appendChild(style);
+    };
+    //homeクリック時
+    let homeClick = document.getElementById(menuList[0]);
+    homeClick.addEventListener("click", () => {
+        catHand(0);
     },false);
-
-    //profileクリックで猫の手
-    let clickElement1 = document.getElementById(menuList[1]);
-    clickElement1.addEventListener("click", (event) => {
-        let eventID = event.currentTarget.id;
-        if(eventID = clickElement1) {
-            let style = document.createElement('style');
-            style.innerHTML = resetHand + `
-            #hand_p {
-                opacity : 1;
-            }`
-            document.body.appendChild(style);
-        } 
+    //profileクリック時
+    let profClick = document.getElementById(menuList[1]);
+    profClick.addEventListener("click", () => {
+        catHand(1);
     },false);
-
-    //skillsクリックで猫の手
-    let clickElement2 = document.getElementById(menuList[2]);
-    clickElement2.addEventListener("click", (event) => {
-        let eventID = event.currentTarget.id;
-        if(eventID = clickElement2) {
-            let style = document.createElement('style');
-            style.innerHTML = resetHand + `
-            #hand_s {
-                opacity : 1;
-            }`
-            document.body.appendChild(style);
-        } 
+    //skillsクリック時
+    let skillsClick = document.getElementById(menuList[2]);
+    skillsClick.addEventListener("click", () => {
+        catHand(2);
     },false);
-
-    //itemsクリックで猫の手
-    let clickElement3 = document.getElementById(menuList[3]);
-    clickElement3.addEventListener("click", (event) => {
-        let eventID = event.currentTarget.id;
-        if(eventID = clickElement3) {
-            let style = document.createElement('style');
-            style.innerHTML = resetHand + `
-            #hand_i {
-                opacity : 1;
-            }`
-            document.body.appendChild(style);
-        } 
+    //itemsクリック時
+    let itemsClick = document.getElementById(menuList[3]);
+    itemsClick.addEventListener("click", () => {
+        catHand(3);
     },false);
-
-    //linksクリックで猫の手
-    let clickElement4 = document.getElementById(menuList[4]);
-    clickElement4.addEventListener("click", (event) => {
-        let eventID = event.currentTarget.id;
-        if(eventID = clickElement4) {
-            let style = document.createElement('style');
-            style.innerHTML = resetHand + `
-            #hand_l {
-                opacity : 1;
-            }`
-            document.body.appendChild(style);
-        } 
+    //linksクリック時
+    let linksClick = document.getElementById(menuList[4]);
+    linksClick.addEventListener("click", () => {
+        catHand(4);
     },false);
     
-    //スクロールイベント
-    window.addEventListener('scroll', function(){
-        //profileフェードイン
-        if( 200 < window.scrollY ) {
-            document.getElementById('prof_main').classList.add('fade_on');
-        } else {
-            document.getElementById('prof_main').classList.remove('fade_on');
+    //スクロールでふわっと
+    window.addEventListener('scroll', function() {
+        function addFade(id){
+            document.getElementById(id).classList.add('fade_on');
         }
-        //skillsフェードイン
-        if( 1000 < window.scrollY ) {
-            document.getElementById('skills_main').classList.add('fade_on');
-        } else {
-            document.getElementById('skills_main').classList.remove('fade_on');
-        }
-        //itemsフェードイン
-        if( 1800 < window.scrollY ) {
-            document.getElementById('items_main').classList.add('fade_on');
-        } else {
-            document.getElementById('items_main').classList.remove('fade_on');
-        }
-        //linksフェードイン
-        if( 2600 < window.scrollY ) {
-            document.getElementById('links_main').classList.add('fade_on');
-        } else {
-            document.getElementById('links_main').classList.remove('fade_on');
+        if(1000 > window.scrollY) {
+            addFade("prof_main");
+        } else if( 1800 > window.scrollY ) {
+            addFade("skills_main");
+        } else if( 2600 > window.scrollY ) {
+            addFade("items_main");
+        } else if( 3200 > window.scrollY ) {
+            addFade("links_main");   
         }
     });
 });
