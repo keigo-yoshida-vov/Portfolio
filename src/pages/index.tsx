@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
-import GraphsPage from './home/HomePage'
+import TopPage from './Top/TopPage'
 
 const Home: NextPage = () => {
   return (
-    <GraphsPage />
+    <TopPage />
   )
 }
 
