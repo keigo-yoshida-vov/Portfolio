@@ -38,7 +38,6 @@ export const PieChart = () => {
             ],
             // グラフの枠線の太さ
             borderWidth: 1,
-            hoverOffset: 4,
         }]
     }
     return <Pie data={data} />;
