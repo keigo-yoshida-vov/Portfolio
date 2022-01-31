@@ -1,4 +1,4 @@
-import { GraphsTemplate } from "../../components/templates/graphs/GraphsTemplate";
+import { GraphsTemplate } from "../../templates/graphs/GraphsTemplate";
 
 export const GraphsPage = () => {
     return <GraphsTemplate />
