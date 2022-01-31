@@ -5,7 +5,7 @@ export const LineChart = () => {
     const data = {
         labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
         datasets: [{
-            label: 'barChart',
+            label: 'LineChart',
             data: [100, 50, 300, 10, 200, 150, 250, 400, 100, 10, 50, 200],
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
             borderColor: 'rgba(75, 192, 192, 1)',
