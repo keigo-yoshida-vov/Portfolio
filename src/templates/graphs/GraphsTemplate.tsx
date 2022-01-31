@@ -1,20 +1,30 @@
 import { BarChart } from "../../components/atoms/charts/bar-chart/BarChart"
 import { LineChart } from "../../components/atoms/charts/line-chart/LineChart";
 import { PieChart } from "../../components/atoms/charts/pie-chart/PieChart";
-import scss from './graphsTemplate.module.scss';
+import scss from './graphs.module.scss';
 import Link from 'next/link'
 
 export const GraphsTemplate = () => {
     return (
         <>
-            <Link href="/">
-                <a>Home</a>
-            </Link>
+            <div className={scss.flexBox}>
+                <div>
+                    <Link href="/"><a>Home</a></Link>
+                </div>
+                <span className={scss.sideMargin5}>{`>`}</span>
+                <div>
+                    <Link href="/libraries"><a>libraries</a></Link>
+                </div>
+                <span className={scss.sideMargin5}>{`>`}</span>
+                <div>
+                    <p>Graphs</p>
+                </div>
+            </div>
             <div className={scss.paper}>
                 <div className={scss.paperTitle}>
                     <p>Graphs by Chart.js</p>
                 </div>
-                <div className={scss.flexBox}>
+                <div className={scss.boxLayout}>
                     <div className={scss.chartWidth}>
                         <div>
                             <BarChart />
