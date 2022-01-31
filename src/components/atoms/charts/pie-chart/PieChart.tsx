@@ -5,7 +5,7 @@ export const PieChart = () => {
     const data = {
         labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
         datasets: [{
-            label: 'barChart',
+            label: 'pieChart',
             data: [100, 50, 300, 10, 200, 150, 250, 400, 100, 10, 50, 200],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
