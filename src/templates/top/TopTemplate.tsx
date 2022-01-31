@@ -1,8 +1,7 @@
-import GraphsPage from '../../pages/libraries/graphs';
-import scss from './homeTemplate.module.scss';
+import scss from './topTemplate.module.scss';
 import Link from 'next/link'
 
-export const HomeTemplate = () => {
+export const TopTemplate = () => {
     return (
         <>
             <div>libralys</div>

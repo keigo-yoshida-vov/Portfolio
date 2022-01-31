@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
-import HomePage from './Home/HomePage'
+import TopPage from './Top/TopPage'
 
 const Home: NextPage = () => {
   return (
-    <HomePage />
+    <TopPage />
   )
 }
 
