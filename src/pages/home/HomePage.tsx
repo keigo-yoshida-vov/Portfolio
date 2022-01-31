@@ -1,7 +1,7 @@
-import { HomeTemplate } from "../../components/templates/home/HomeTemplate";
+import { GraphsTemplate } from "../../components/templates/graphs/GraphsTemplate";
 
-export const HomePage = () => {
-    return <HomeTemplate />
+export const GraphsPage = () => {
+    return <GraphsTemplate />
 };
 
-export default HomePage;
+export default GraphsPage;
